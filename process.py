@@ -11,7 +11,7 @@ while True:
 		prev = current
 		current = x
 		val = (Math.abs(double(current) - double(prev))
-		if val > hJerk):
+		if val > hJerk:
 			hJerk = val
 		if val > .5:
 			hShock ++
