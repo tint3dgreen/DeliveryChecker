@@ -24,7 +24,7 @@
 /*******************************************************************************/
 
 #include <Wire.h>
-#include "MMA7660.h"
+#include "C:\Users\carsc\Documents\GitHub\DeliveryChecker\Accelerometer_MMA7660-master/MMA7660.h"
 MMA7660 accelemeter;
 void setup()
 {
@@ -57,5 +57,3 @@ void loop()
 	Serial.println("*************");
 	delay(500);
 }
-
-
