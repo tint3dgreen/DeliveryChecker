@@ -24,7 +24,7 @@
 /*******************************************************************************/
 
 #include <Wire.h>
-#include "C:\Users\carsc\Documents\GitHub\DeliveryChecker\Accelerometer_MMA7660-master/MMA7660.h"
+#include "C:\Users\carsc\Documents\GitHub\DeliveryChecker\Accelerometer_MMA7660-master/MMA7660.cpp"
 MMA7660 accelemeter;
 void setup()
 {
