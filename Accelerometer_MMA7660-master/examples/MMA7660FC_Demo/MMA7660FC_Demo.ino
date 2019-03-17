@@ -1,3 +1,4 @@
+#include <SD.h>;
 /*****************************************************************************/
 //	Function:    Get the accelemeter of the x/y/z axis. 
 //  Hardware:    Grove - 3-Axis Digital Accelerometer(±1.5g)
@@ -24,12 +25,15 @@
 /*******************************************************************************/
 
 #include <Wire.h>
-#include "C:\Users\carsc\Documents\GitHub\DeliveryChecker\Accelerometer_MMA7660-master/MMA7660.cpp"
+#include "C:\Users\carsc\Documents\GitHub\DeliveryChecker\Accelerometer_MMA7660-master\examples\MMA7660FC_Demo/MMA7660.cpp"
 MMA7660 accelemeter;
 void setup()
 {
 	accelemeter.init();  
 	Serial.begin(9600);
+  File myFile;
+  myFile = SD.open("example.txt", FILE_WRITE);
+  myFile.close();
 }
 void loop()
 {
